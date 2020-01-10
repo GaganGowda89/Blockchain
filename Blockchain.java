@@ -39,11 +39,11 @@ public class Blockchain {
         
         ArrayList<Blockchain> block = new ArrayList<>();
         
-        //Create the first block - Farmer
+        //Create the first block 
         String[] firstBlockTransaction = {"Sending Money to Alex","Bitcoin: 5 "};
         Blockchain firstBlock = new Blockchain(0,firstBlockTransaction);
         
-        //Create the Second block - Machinen Ring
+        //Create the Second block 
         String[] secondBlockTransaction = {"Sending Money to Ben","Bitcoin: 10 "};
         Blockchain secondBlock = new Blockchain(firstBlock.getBlockhash(),secondBlockTransaction);
         
@@ -56,7 +56,7 @@ public class Blockchain {
         //2.The second block Hash is: -1234376355
         
         //Let's see adding the third block changes the has value
-        //Create the Third block - Machinen Ring
+        //Create the Third block 
         String[] thirdBlockTransaction = {"Received Money from Alex and Ben" ,"Bitcoin: 15"};
         Blockchain thirdBlock = new Blockchain(secondBlock.getBlockhash(),thirdBlockTransaction);
         
@@ -73,7 +73,7 @@ public class Blockchain {
         // The third block Hash is: 311497535
         
         // The main point was to showcase changing any string characters in the transaction will lead to new digital signature. This hashing algorithm is very difficult to crack and 
-        // more the blocks it harder to crack
+        // more the blocks it is harder to crack 
         
     }
 }
